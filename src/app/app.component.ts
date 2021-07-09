@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  loadedName = 'recipe';
+  // loadedName = 'recipe';
 
-  onNavigate(name: string) {
-    this.loadedName = name;
-  }
+  // onNavigate(name: string) {
+  //   this.loadedName = name;
+  // }
 }

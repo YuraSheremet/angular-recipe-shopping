@@ -1,4 +1,4 @@
-import { EventEmitter, Injectable } from "@angular/core";
+import { Injectable } from "@angular/core";
 import { Ingredient } from "../ingredients.model";
 import { Recipe } from "../recipe.model";
 import { ShoppingListService } from "./shopping-list.service";
@@ -7,7 +7,6 @@ import { ShoppingListService } from "./shopping-list.service";
     providedIn: 'root'
 })
 export class RecipeService {
-    recipeSelected = new EventEmitter<Recipe>();
     
     private recipes: Recipe[] = [
         new Recipe('test', 'hello world', 'https://realfood.tesco.com/media/images/RFO-1400x919-AsianSalmon-9a9cf566-eaad-4107-aa79-886ec53e6b31-0-1400x919.jpg', [
@@ -24,6 +23,10 @@ export class RecipeService {
 
     getRecipe() {
         return this.recipes.slice();
+    }
+
+    getRec(index: number) {
+        return this.recipes[index];
     }
 
     addIngredientsToShoppingList(ingredients: Ingredient[]) {

@@ -1,12 +1,12 @@
-import { ActionReducerMap } from "@ngrx/store";
-import { shoppingListReducer, ShoppingListState } from "./shopping-list.reducer";
+// import { ActionReducerMap } from "@ngrx/store";
+// import { shoppingListReducer, State } from "./shopping-list.reducer";
 
-export const rootReducer = {};
+// export const rootReducer = {};
 
-export interface AppState {
-    shoppingList: ShoppingListState;
-}
+// export interface AppState {
+//     shoppingList: State;
+// }
 
-export const reducers: ActionReducerMap<AppState, any> = {
-    shoppingList: shoppingListReducer
-};
+// export const reducers: ActionReducerMap<AppState, any> = {
+//     shoppingList: shoppingListReducer
+// };
